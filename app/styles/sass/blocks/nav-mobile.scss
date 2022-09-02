@@ -1,0 +1,37 @@
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 452px;
+    height: 500px;
+    height: 0;
+    background: $bg_color;
+    z-index: 2;
+
+    &__list {
+        margin-left: -30px;
+        margin-top: 15px;
+    }
+
+    &__item {
+        padding: 19px 0;
+    }
+
+    &__item a {
+        font-size: 28px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    & a {
+        margin: 40px 94.5px;
+        width: 235px;
+    }
+
+    &.active {
+        display: block;
+        min-height: 500px;
+        transition: height .5s ease;
+    }
+}

@@ -1,0 +1,53 @@
+.popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 40%;
+        top: 250px;
+        width: 400px;
+        height: 400px;
+        background: $bg-color;
+
+        & b {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 600;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-size: 20px;
+            line-height: 23px;
+            top: 15px;
+            right: 15px;
+            width: 43px;
+            height: 40px;
+            background: #497957;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+
+    
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}

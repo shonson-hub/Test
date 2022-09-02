@@ -1,0 +1,72 @@
+// USER VARIABLES SECTION
+
+$header_color: #B47FF7 
+$slider_color: #7029CB
+$ban_color: #3ADE4B
+$cart_bgcolor: #D4FF5A
+$cart_itemcolor: #497957
+$cart_item_bordercolor: #00FF4A
+$bg_color: #A6C9FF
+$footer_color: #D87FF6
+$textcolor: #ffffff
+$accent_color: #FF4B4B
+$userfont: roboto-oh5, sans-serif 
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif
+
+
+
+::placeholder
+	color: #666
+
+::selection
+	// background-color: $accent
+	color: $accent_color
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a 
+	text-decoration: none
+	color: $textcolor
+	
+
+h2 
+	font-size: 30px
+	line-height: 45px
+	font-weight: 600
+	text-align: center
+
+.button 
+	display: flex
+	align-items: center
+	justify-content: center
+	min-width: 220px
+	height: 58px
+	font-size: 24px
+	line-height: 28px
+	font-weight: 400
+	color: $textcolor
+	background: $accent_color
+	border: none
+	padding: 0 15px
+	border-radius: 25px
+		
+        
